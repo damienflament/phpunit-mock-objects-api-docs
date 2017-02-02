@@ -6,8 +6,8 @@ use Sami\Version\GitVersionCollection;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 
-const REPO           = 'sebastianbergmann/phpunit';
-const REPO_DIR       = __DIR__ . '/phpunit';
+const REPO           = 'sebastianbergmann/phpunit-mock-objects';
+const REPO_DIR       = __DIR__ . '/phpunit-mock-objects';
 const SRC_DIR        = REPO_DIR . '/src';
 const CACHE_DIR      = __DIR__ . '/cache';
 const BUILD_DIR      = __DIR__ . '/gh-pages';
@@ -23,8 +23,8 @@ $iterator = Finder::create()
 
 // Both old and current stable versions are targeted.
 $versions = GitVersionCollection::create(REPO_DIR)
-    ->add('4.8', '4.8 (old stable)')
-    ->add('5.7', '5.7 (current stable)');
+    ->add('2.3', '2.3 (used by old stable PHPUnit)')
+    ->add('3.4', '3.4 (used by current stable PHPUnit)');
 
 
 // Generate main index file redirecting to current stable version.
@@ -46,7 +46,7 @@ $filesystem->dumpFile(BUILD_DIR . '/index.html', $renderedHtml);
 
 // Return Sami configuration
 return new Sami($iterator, array(
-    'title'               => 'PHPUnit API - The PHP Unit Testing framework.',
+    'title'               => 'PHPUnit Mock Objects API - Mock Object library for PHPUnit',
     'remote_repository'   => new GitHubRemoteRepository(REPO, REPO_DIR),
     'versions'            => $versions,
     'cache_dir'           => CACHE_DIR . '/%version%',

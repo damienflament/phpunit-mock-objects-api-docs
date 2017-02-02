@@ -1,5 +1,5 @@
 /vendor/
 /composer.lock
-/phpunit
+/phpunit-mock-objects
 /cache
 /gh-pages

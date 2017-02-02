@@ -1,6 +1,6 @@
 {
     "name": "damienflament/phpunit-api-docs",
-    "description": "PHPUnit API documentation.",
+    "description": "PHPUnit Mock Object library API documentation.",
     "type": "project",
     "require": {
         "sami/sami": "^4.0",
