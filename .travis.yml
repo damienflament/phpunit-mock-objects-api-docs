@@ -1,0 +1,42 @@
+sudo: false
+
+branches:
+    only:
+        - master
+
+language: php
+
+php:
+    - '7.1'
+
+before_install:
+    # Disable XDebug to speed up PHP scripts
+    - phpenv config-rm xdebug.ini
+    # Configure GitHub connection
+    - git config --global user.email 'damien.flament@gmx.com'
+    - git config --global user.name  'Damien Flament'
+    - git config --global push.default simple
+    - echo -e "machine github.com\n login $GH_TOKEN" >> ~/.netrc
+
+install:
+    # Get source code to document
+    - git clone https://github.com/sebastianbergmann/phpunit.git phpunit
+    # Get documentation branch and clean it
+    - git clone --branch=gh-pages https://github.com/damienflament/phpunit-api-docs.git gh-pages
+    - rm -Rf gh-pages/*
+    # Install documentation generation dependencies
+    - composer install --prefer-dist
+
+before_script:
+    - vendor/bin/sami.php --version
+
+script:
+    # Generate documentation
+    - vendor/bin/sami.php update phpunit.php --quiet
+
+after_script:
+    # Commit generated documentation to gh-pages branch
+    - cd gh-pages
+    - git add --all
+    - git commit -m 'Automatic update by Travis. [skip ci]'
+    - git push
