@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PHPUnit_Framework_MockObject_Generator | PHPUnit Mock Objects API - Mock Object library for PHPUnit</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PHPUnit_Framework_MockObject_Generator" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../2.3/index.html" data-version="2.3">2.3 (used by old stable PHPUnit)</option>
+                                            <option value="../3.4/index.html" data-version="3.4">3.4 (used by current stable PHPUnit)</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">PHPUnit Mock Objects API - Mock Object library for PHPUnit</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PHPUnit_Framework_MockObject_Generator
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PHPUnit_Framework_MockObject_Generator</strong>        (<a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Mock Object Code Generator</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_blacklistedMethodNames">
+                                        protected                                        array
+                </td>
+                <td>$blacklistedMethodNames</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMock">getMock</a>(array|string $type, array $methods = array(), array $arguments = array(), string $mockClassName = &#039;&#039;, bool $callOriginalConstructor = true, bool $callOriginalClone = true, bool $callAutoload = true, bool $cloneArguments = true, bool $callOriginalMethods = false, object $proxyTarget = null)
+        
+                                            <p>Returns a mock object for the specified class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getObject">getObject</a>(string $code, string $className, array|string $type = &#039;&#039;, bool $callOriginalConstructor = false, bool $callAutoload = false, array $arguments = array(), bool $callOriginalMethods = false, object $proxyTarget = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evalClass">evalClass</a>(string $code, string $className)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMockForAbstractClass">getMockForAbstractClass</a>(string $originalClassName, array $arguments = array(), string $mockClassName = &#039;&#039;, bool $callOriginalConstructor = true, bool $callOriginalClone = true, bool $callAutoload = true, array $mockedMethods = array(), bool $cloneArguments = true)
+        
+                                            <p>Returns a mock object for the specified abstract class with all abstract
+methods of the class mocked. Concrete methods to mock can be specified with
+the last parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMockForTrait">getMockForTrait</a>(string $traitName, array $arguments = array(), string $mockClassName = &#039;&#039;, bool $callOriginalConstructor = true, bool $callOriginalClone = true, bool $callAutoload = true, array $mockedMethods = array(), bool $cloneArguments = true)
+        
+                                            <p>Returns a mock object for the specified trait with all abstract methods
+of the trait mocked. Concrete methods to mock can be specified with the
+<code>$mockedMethods</code> parameter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getObjectForTrait">getObjectForTrait</a>(string $traitName, array $arguments = array(), string $traitClassName = &#039;&#039;, bool $callOriginalConstructor = true, bool $callOriginalClone = true, bool $callAutoload = true)
+        
+                                            <p>Returns an object for the specified trait.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generate">generate</a>(array|string $type, array $methods = null, string $mockClassName = &#039;&#039;, bool $callOriginalClone = true, bool $callAutoload = true, bool $cloneArguments = true, bool $callOriginalMethods = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateClassFromWsdl">generateClassFromWsdl</a>(string $wsdlFile, string $className, array $methods = array(), array $options = array())
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateMock">generateMock</a>(array|string $type, array|null $methods, string $mockClassName, bool $callOriginalClone, bool $callAutoload, bool $cloneArguments, bool $callOriginalMethods)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateClassName">generateClassName</a>(array|string $type, string $className, string $prefix)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateMockClassDeclaration">generateMockClassDeclaration</a>(array $mockClassName, bool $isInterface, array $additionalInterfaces = array())
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateMockedMethodDefinitionFromExisting">generateMockedMethodDefinitionFromExisting</a>(string $templateDir, <a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method, bool $cloneArguments, bool $callOriginalMethods)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateMockedMethodDefinition">generateMockedMethodDefinition</a>(string $templateDir, string $className, string $methodName, bool $cloneArguments = true, string $modifier = &#039;public&#039;, string $arguments_decl = &#039;&#039;, string $arguments_call = &#039;&#039;, string $reference = &#039;&#039;, bool $callOriginalMethods = false, bool $static = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canMockMethod">canMockMethod</a>(<a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethodParameters">getMethodParameters</a>(<a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method, bool $forCall = false)
+        
+                                            <p>Returns the parameters of a function or method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getMock">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L134">line 134</a></div>
+        <code>                    object
+    <strong>getMock</strong>(array|string $type, array $methods = array(), array $arguments = array(), string $mockClassName = &#039;&#039;, bool $callOriginalConstructor = true, bool $callOriginalClone = true, bool $callAutoload = true, bool $cloneArguments = true, bool $callOriginalMethods = false, object $proxyTarget = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a mock object for the specified class.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$methods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$mockClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalConstructor</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalClone</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callAutoload</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cloneArguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalMethods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$proxyTarget</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>PHPUnit_Framework_Exception</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_RuntimeException.html">PHPUnit_Framework_MockObject_RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getObject">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L235">line 235</a></div>
+        <code>            protected        object
+    <strong>getObject</strong>(string $code, string $className, array|string $type = &#039;&#039;, bool $callOriginalConstructor = false, bool $callAutoload = false, array $arguments = array(), bool $callOriginalMethods = false, object $proxyTarget = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalConstructor</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callAutoload</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalMethods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$proxyTarget</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evalClass">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L287">line 287</a></div>
+        <code>            protected        
+    <strong>evalClass</strong>(string $code, string $className)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMockForAbstractClass">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L312">line 312</a></div>
+        <code>                    object
+    <strong>getMockForAbstractClass</strong>(string $originalClassName, array $arguments = array(), string $mockClassName = &#039;&#039;, bool $callOriginalConstructor = true, bool $callOriginalClone = true, bool $callAutoload = true, array $mockedMethods = array(), bool $cloneArguments = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a mock object for the specified abstract class with all abstract
+methods of the class mocked. Concrete methods to mock can be specified with
+the last parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$originalClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$mockClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalConstructor</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalClone</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callAutoload</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mockedMethods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cloneArguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_RuntimeException.html">PHPUnit_Framework_MockObject_RuntimeException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>PHPUnit_Framework_Exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMockForTrait">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L372">line 372</a></div>
+        <code>                    object
+    <strong>getMockForTrait</strong>(string $traitName, array $arguments = array(), string $mockClassName = &#039;&#039;, bool $callOriginalConstructor = true, bool $callOriginalClone = true, bool $callAutoload = true, array $mockedMethods = array(), bool $cloneArguments = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a mock object for the specified trait with all abstract methods
+of the trait mocked. Concrete methods to mock can be specified with the
+<code>$mockedMethods</code> parameter.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$traitName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$mockClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalConstructor</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalClone</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callAutoload</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mockedMethods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cloneArguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_RuntimeException.html">PHPUnit_Framework_MockObject_RuntimeException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>PHPUnit_Framework_Exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getObjectForTrait">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L433">line 433</a></div>
+        <code>                    object
+    <strong>getObjectForTrait</strong>(string $traitName, array $arguments = array(), string $traitClassName = &#039;&#039;, bool $callOriginalConstructor = true, bool $callOriginalClone = true, bool $callAutoload = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an object for the specified trait.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$traitName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$traitClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalConstructor</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalClone</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callAutoload</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_RuntimeException.html">PHPUnit_Framework_MockObject_RuntimeException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>PHPUnit_Framework_Exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generate">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L488">line 488</a></div>
+        <code>                    array
+    <strong>generate</strong>(array|string $type, array $methods = null, string $mockClassName = &#039;&#039;, bool $callOriginalClone = true, bool $callAutoload = true, bool $cloneArguments = true, bool $callOriginalMethods = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$methods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$mockClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalClone</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callAutoload</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cloneArguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalMethods</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateClassFromWsdl">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L533">line 533</a></div>
+        <code>                    string
+    <strong>generateClassFromWsdl</strong>(string $wsdlFile, string $className, array $methods = array(), array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$wsdlFile</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$methods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_RuntimeException.html">PHPUnit_Framework_MockObject_RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateMock">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L624">line 624</a></div>
+        <code>            protected        array
+    <strong>generateMock</strong>(array|string $type, array|null $methods, string $mockClassName, bool $callOriginalClone, bool $callAutoload, bool $cloneArguments, bool $callOriginalMethods)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$methods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$mockClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalClone</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callAutoload</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cloneArguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalMethods</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>PHPUnit_Framework_Exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateClassName">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L821">line 821</a></div>
+        <code>            protected        array
+    <strong>generateClassName</strong>(array|string $type, string $className, string $prefix)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateMockClassDeclaration">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L863">line 863</a></div>
+        <code>            protected        array
+    <strong>generateMockClassDeclaration</strong>(array $mockClassName, bool $isInterface, array $additionalInterfaces = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$mockClassName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isInterface</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$additionalInterfaces</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateMockedMethodDefinitionFromExisting">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L906">line 906</a></div>
+        <code>            protected        string
+    <strong>generateMockedMethodDefinitionFromExisting</strong>(string $templateDir, <a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method, bool $cloneArguments, bool $callOriginalMethods)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$templateDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cloneArguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalMethods</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateMockedMethodDefinition">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L953">line 953</a></div>
+        <code>            protected        string
+    <strong>generateMockedMethodDefinition</strong>(string $templateDir, string $className, string $methodName, bool $cloneArguments = true, string $modifier = &#039;public&#039;, string $arguments_decl = &#039;&#039;, string $arguments_call = &#039;&#039;, string $reference = &#039;&#039;, bool $callOriginalMethods = false, bool $static = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$templateDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$methodName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cloneArguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$modifier</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$arguments_decl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$arguments_call</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$reference</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$callOriginalMethods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$static</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canMockMethod">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L986">line 986</a></div>
+        <code>            protected        bool
+    <strong>canMockMethod</strong>(<a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethodParameters">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/2.3/src/Framework/MockObject/Generator.php#L1007">line 1007</a></div>
+        <code>            protected        string
+    <strong>getMethodParameters</strong>(<a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a> $method, bool $forCall = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the parameters of a function or method.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionMethod">ReflectionMethod</a></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$forCall</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_RuntimeException.html">PHPUnit_Framework_MockObject_RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
