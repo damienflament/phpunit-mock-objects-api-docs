@@ -46,7 +46,7 @@ $filesystem->dumpFile(BUILD_DIR . '/index.html', $renderedHtml);
 
 // Return Sami configuration
 return new Sami($iterator, array(
-    'title'               => 'PHPUnit Mock Objects API - Mock Object library for PHPUnit',
+    'title'               => 'PHPUnit Mock Object API - Mock Object library for PHPUnit',
     'remote_repository'   => new GitHubRemoteRepository(REPO, REPO_DIR),
     'versions'            => $versions,
     'cache_dir'           => CACHE_DIR . '/%version%',

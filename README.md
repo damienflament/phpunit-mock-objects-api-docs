@@ -1,7 +1,7 @@
-PHPUnit API Documentation [![Build Status][build-status-image]][build-status]
+PHPUnit Mock Object API Documentation [![Build Status][build-status-image]][build-status]
 ===
 
-This repository hosts both the [PHPUnit Mock Objects API documentation][web]
+This repository hosts both the [PHPUnit Mock Object API documentation][web]
 and the scripts used to generate it.
 
 The [PHPUnit Mock Objects][phpunit-mock-objects] source code is parsed by
@@ -11,7 +11,7 @@ The [PHPUnit Mock Objects][phpunit-mock-objects] source code is parsed by
 
 ---
 
-To see the PHPUnit Mock Objects API Documentation, go to:
+To see the PHPUnit Mock Object API Documentation, go to:
 [https://damienflament.github.io/phpunit-mock-objects-api-docs/][web]
 
 
