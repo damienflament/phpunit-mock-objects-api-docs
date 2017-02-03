@@ -1,0 +1,28 @@
+{% extends 'default/class.twig' %}
+
+{% from "macros.twig" import render_classes, breadcrumbs, namespace_link, class_link, property_link, method_link, hint_link, source_link, method_source_link, deprecated, deprecations %}
+
+{% block methods %}
+    <div class="container-fluid underlined">
+        {% for method in methods %}
+            <div class="row">
+                <div class="col-md-4 type">
+                    {% if method.static %}static&nbsp;{% endif %}{{ hint_link(method.hint) }}
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_{{ method.name|raw }}">{{ method.name|raw }}</a>{{ block('method_parameters_signature') }}
+                    {% if not method.shortdesc %}
+                        <p class="no-description">No description</p>
+                    {% else %}
+                        <p>{{ method.shortdesc|desc(class) }}</p>
+                    {%- endif %}
+                </div>
+                <div class="col-md-2">
+                    {%- if method.class is not same as(class) -%}
+                        <small>from&nbsp;{{ method_link(method, false, true) }}</small>
+                    {%- endif -%}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
