@@ -34,7 +34,7 @@ script:
     # Generate documentation
     - vendor/bin/sami.php update phpunit-mock-objects.php --no-ansi -vvv
 
-after_script:
+after_success:
     # Commit generated documentation to gh-pages branch
     - cd gh-pages
     - git add --all
