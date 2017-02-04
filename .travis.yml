@@ -32,7 +32,7 @@ before_script:
 
 script:
     # Generate documentation
-    - vendor/bin/sami.php update phpunit-mock-objects.php --quiet
+    - vendor/bin/sami.php update phpunit-mock-objects.php --no-ansi -vvv
 
 after_script:
     # Commit generated documentation to gh-pages branch
