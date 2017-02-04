@@ -7,7 +7,7 @@ and the scripts used to generate it.
 The [PHPUnit Mock Objects][phpunit-mock-objects] source code is parsed by
 [Sami][sami] and the generated HTML are served by the GitHub Pages.
 
-[Travis][travis] is used to automate te process.
+[Travis][travis] is used to automate the process.
 
 ---
 
