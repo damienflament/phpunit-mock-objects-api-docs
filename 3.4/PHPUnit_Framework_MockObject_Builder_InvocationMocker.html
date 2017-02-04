@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PHPUnit_Framework_MockObject_Builder_InvocationMocker | PHPUnit Mock Object API - Mock Object library for PHPUnit</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PHPUnit_Framework_MockObject_Builder_InvocationMocker" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../3.4/index.html" data-version="3.4">3.4 (used by old stable PHPUnit)</option>
+                                            <option value="../4.0.0/index.html" data-version="4.0.0">4.0 (used by current stable PHPUnit)</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">PHPUnit Mock Object API - Mock Object library for PHPUnit</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PHPUnit_Framework_MockObject_Builder_InvocationMocker
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PHPUnit_Framework_MockObject_Builder_InvocationMocker</strong>        implements
+        <a href="PHPUnit_Framework_MockObject_Builder_MethodNameMatch.html">PHPUnit_Framework_MockObject_Builder_MethodNameMatch</a>        (<a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Builder for mocked or stubbed invocations.</p>            <p>Provides methods for building expectations without having to resort to
+instantiating the various matchers manually. These methods also form a
+more natural way of reading the expectation. This class should be together
+with the test case PHPUnit<em>Framework</em>MockObject_TestCase.</p>        </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_collection">
+                                        protected                                        <a href="PHPUnit_Framework_MockObject_Stub_MatcherCollection.html">PHPUnit_Framework_MockObject_Stub_MatcherCollection</a>
+                </td>
+                <td>$collection</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_matcher">
+                                        protected                                        <a href="PHPUnit_Framework_MockObject_Matcher.html">PHPUnit_Framework_MockObject_Matcher</a>
+                </td>
+                <td>$matcher</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-4 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method___construct">__construct</a>(<a href="PHPUnit_Framework_MockObject_Stub_MatcherCollection.html">PHPUnit_Framework_MockObject_Stub_MatcherCollection</a> $collection, <a href="PHPUnit_Framework_MockObject_Matcher_Invocation.html">PHPUnit_Framework_MockObject_Matcher_Invocation</a> $invocationMatcher, array $configurableMethods)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Matcher.html">PHPUnit_Framework_MockObject_Matcher</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_getMatcher">getMatcher</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_id">id</a>(string $id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_Identity.html">PHPUnit_Framework_MockObject_Builder_Identity</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_will">will</a>(<a href="PHPUnit_Framework_MockObject_Stub.html">PHPUnit_Framework_MockObject_Stub</a> $stub)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_willReturn">willReturn</a>($value, $nextValues)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_willReturnReference">willReturnReference</a>(mixed $reference)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_willReturnMap">willReturnMap</a>(array $valueMap)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_willReturnArgument">willReturnArgument</a>(mixed $argumentIndex)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_willReturnCallback">willReturnCallback</a>(callable $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_willReturnSelf">willReturnSelf</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_willReturnOnConsecutiveCalls">willReturnOnConsecutiveCalls</a>($values)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_willThrowException">willThrowException</a>(<a target="_blank" href="http://php.net/Exception">Exception</a> $exception)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_Stub.html">PHPUnit_Framework_MockObject_Builder_Stub</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_after">after</a>(string $id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_ParametersMatch.html">PHPUnit_Framework_MockObject_Builder_ParametersMatch</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_with">with</a>($arguments)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_withConsecutive">withConsecutive</a>(array $arguments)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Matcher_AnyParameters.html">PHPUnit_Framework_MockObject_Matcher_AnyParameters</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_withAnyParameters">withAnyParameters</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-4 type">
+                    <a href="PHPUnit_Framework_MockObject_Builder_ParametersMatch.html">PHPUnit_Framework_MockObject_Builder_ParametersMatch</a>
+                </div>
+                <div class="col-md-6 type">
+                    <a href="#method_method">method</a>(PHPUnit_Framework_Constraint|string $constraint)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L43">line 43</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="PHPUnit_Framework_MockObject_Stub_MatcherCollection.html">PHPUnit_Framework_MockObject_Stub_MatcherCollection</a> $collection, <a href="PHPUnit_Framework_MockObject_Matcher_Invocation.html">PHPUnit_Framework_MockObject_Matcher_Invocation</a> $invocationMatcher, array $configurableMethods)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_Stub_MatcherCollection.html">PHPUnit_Framework_MockObject_Stub_MatcherCollection</a></td>
+                <td>$collection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_Matcher_Invocation.html">PHPUnit_Framework_MockObject_Matcher_Invocation</a></td>
+                <td>$invocationMatcher</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$configurableMethods</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMatcher">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L58">line 58</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Matcher.html">PHPUnit_Framework_MockObject_Matcher</a>
+    <strong>getMatcher</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Matcher.html">PHPUnit_Framework_MockObject_Matcher</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_id">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L68">line 68</a></div>
+        <code>                    
+    <strong>id</strong>(string $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>Unique identification of expectation.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_will">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L80">line 80</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_Identity.html">PHPUnit_Framework_MockObject_Builder_Identity</a>
+    <strong>will</strong>(<a href="PHPUnit_Framework_MockObject_Stub.html">PHPUnit_Framework_MockObject_Stub</a> $stub)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="PHPUnit_Framework_MockObject_Stub.html">PHPUnit_Framework_MockObject_Stub</a></td>
+                <td>$stub</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_Identity.html">PHPUnit_Framework_MockObject_Builder_Identity</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturn">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L93">line 93</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>willReturn</strong>($value, $nextValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$nextValues</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturnReference">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L109">line 109</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>willReturnReference</strong>(mixed $reference)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$reference</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturnMap">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L121">line 121</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>willReturnMap</strong>(array $valueMap)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$valueMap</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturnArgument">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L135">line 135</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>willReturnArgument</strong>(mixed $argumentIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$argumentIndex</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturnCallback">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L149">line 149</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>willReturnCallback</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturnSelf">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L161">line 161</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>willReturnSelf</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willReturnOnConsecutiveCalls">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L173">line 173</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>willReturnOnConsecutiveCalls</strong>($values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_willThrowException">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L185">line 185</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>willThrowException</strong>(<a target="_blank" href="http://php.net/Exception">Exception</a> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_after">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L197">line 197</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_Stub.html">PHPUnit_Framework_MockObject_Builder_Stub</a>
+    <strong>after</strong>(string $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>The identification of the expectation that should
+                  occur before this one.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_Stub.html">PHPUnit_Framework_MockObject_Builder_Stub</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_with">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L230">line 230</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_ParametersMatch.html">PHPUnit_Framework_MockObject_Builder_ParametersMatch</a>
+    <strong>with</strong>($arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_ParametersMatch.html">PHPUnit_Framework_MockObject_Builder_ParametersMatch</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withConsecutive">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L244">line 244</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a>
+    <strong>withConsecutive</strong>(array $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_InvocationMocker.html">PHPUnit_Framework_MockObject_Builder_InvocationMocker</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withAnyParameters">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L256">line 256</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Matcher_AnyParameters.html">PHPUnit_Framework_MockObject_Matcher_AnyParameters</a>
+    <strong>withAnyParameters</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Matcher_AnyParameters.html">PHPUnit_Framework_MockObject_Matcher_AnyParameters</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_method">
+        <div class="location">at         <a href="https://github.com/sebastianbergmann/phpunit-mock-objects/blob/3.4/src/Framework/MockObject/Builder/InvocationMocker.php#L270">line 270</a></div>
+        <code>                    <a href="PHPUnit_Framework_MockObject_Builder_ParametersMatch.html">PHPUnit_Framework_MockObject_Builder_ParametersMatch</a>
+    <strong>method</strong>(PHPUnit_Framework_Constraint|string $constraint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>PHPUnit_Framework_Constraint|string</td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="PHPUnit_Framework_MockObject_Builder_ParametersMatch.html">PHPUnit_Framework_MockObject_Builder_ParametersMatch</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
